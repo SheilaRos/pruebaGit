@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Function;
 
 public class Main {
 
@@ -14,7 +15,7 @@ public class Main {
         numbers.add(5);
         numbers.add(30);
 
-        Collections.sort(numbers);
+        numbers.sort(Integer::compareTo);
         System.out.println(numbers);
         // write your code here
     }
